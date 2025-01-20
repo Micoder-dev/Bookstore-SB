@@ -31,6 +31,10 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     implementation("org.flywaydb:flyway-database-postgresql")
 
+    compileOnly("javax.servlet:javax.servlet-api:4.0.1")
+
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.mockito", module = "mockito-core")
         exclude(group = "org.mockito", module = "mockito-junit-jupiter")
